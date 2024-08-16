@@ -8,7 +8,9 @@
 4. Enter all basic details for package.json file ✅
 5. Create readme.md file ✅
 6. Add git repository
-7.
+   1. git init
+   2. git branch
+   3.
 
 ## Packages to install
 
