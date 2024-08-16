@@ -96,6 +96,23 @@
        ./dist
    ```
 
+### 17. Add mongoose for database connection
+
+### 18. Add express for server
+
+### 19. Add dotenv for envoirment variables
+
+### 20. Add mongodb_connection key from mongodb online
+
+### 21. Add db name inside constants.js file
+
+### 22. Add env variable inside .env file
+
+1. PORT
+2. MONGODB_CONNECTION
+
+### 21.
+
 ## Packages to install
 
 ## 1. node version check
@@ -134,4 +151,22 @@ npm i -D nodemon
 npm i -D prettier
 ```
 
-### 7. In
+### 7. Install mongoose for database connection
+
+```cmd
+npm i mongoose
+```
+
+### 8.
+
+## To check all packages version
+
+Use this command
+
+```cmd
+npm list packagename
+```
+
+```cmd
+npm list mongoose
+```
