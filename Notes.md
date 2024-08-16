@@ -39,6 +39,3 @@
    ```
 
 5.
-
-eval "$(ssh-agent -s)"
-ssh-add git@github.com:kundalik5545/backendprojectsetup.git
