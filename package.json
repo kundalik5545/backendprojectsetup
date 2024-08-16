@@ -1,0 +1,14 @@
+{
+  "name": "backensetup",
+  "version": "1.0.0",
+  "description": "Full production level backend setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "kundalik jadhav",
+  "license": "ISC"
+}
