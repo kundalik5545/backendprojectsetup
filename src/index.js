@@ -7,7 +7,20 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./env" });
 
 //Connect database function called here after importing
-connectDB();
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`🚀 Server is running on port : ${process.env.PORT}`);
+    });
+
+    app.on("Error", (error) => {
+      console.log("🚫 Error: ", error);
+      throw error;
+    });
+  })
+  .catch((err) => {
+    console.log("🚩 MONGO db connection failed !!!", err);
+  });
 
 /* Part 01
 Simple function to connect database

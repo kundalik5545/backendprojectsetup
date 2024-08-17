@@ -104,14 +104,59 @@
 
 ### 20. Add mongodb_connection key from mongodb online
 
-### 21. Add db name inside constants.js file
+### 21. Add db name inside constants.js file ✅
 
-### 22. Add env variable inside .env file
+### 22. Add env variable inside .env file ✅
 
 1. PORT
 2. MONGODB_CONNECTION
 
-### 21.
+### 23. Check databsae is connected ✅
+
+### 24. Now Edit app.js
+
+1. Add express code
+2. Export app.js
+3. import app.js to index.js
+4. setup server inside connectDb().then().catch()
+
+### 25. Now run and check server is live
+
+### 26. Add CORS and cookie-parser
+
+1.Cors and cookiParser used this way
+
+```javascript
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN,
+    credentials: true,
+  })
+);
+
+//THis is configuration for json data
+app.use(express.json({ limit: "16kb" }));
+//THis is configuration for url data
+app.use(express.urlencoded({ extended: true, limit: "16kb" }));
+//THis is configuration for public data files
+app.use(express.static("public"));
+//This is configuration for url data
+app.use(cookieParser());
+```
+
+### 27. Now create asyncHandler fun under utils folder 📂 to handle request response next
+
+```javascript
+const asyncHandler = (requestHandler) => {
+  (req, res, next) => {
+    Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
+  };
+};
+
+export { asyncHandler };
+```
+
+### 28. Handle API error under utils folder 📂
 
 ## Packages to install
 
@@ -157,9 +202,33 @@ npm i -D prettier
 npm i mongoose
 ```
 
-### 8.
+### 8. Install express
 
-## To check all packages version
+```cmd
+npm i express
+```
+
+### 9. Install dotenv
+
+```cmd
+npm i dotenv
+```
+
+### 10. Install cookie-parser
+
+```cmd
+npm i cookie-parser
+```
+
+### 11. Install CORS
+
+```cmd
+npm i cors
+```
+
+### 12. Install cookie-parser
+
+### To check all packages version
 
 Use this command
 
