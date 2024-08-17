@@ -1,6 +1,7 @@
 // This is a starting point for backend.
 
 import connectDB from "./db/dbconnection.js";
+import { app } from "../src/app.js";
 import dotenv from "dotenv";
 dotenv.config({ path: "./env" });
 //require("dotenv").config({path:"./env"}) ==> alternative for above benefit is one line execution but not consistent with our code structure here we use require than import
@@ -8,6 +9,10 @@ dotenv.config({ path: "./env" });
 //Connect database function called from db folder
 connectDB()
   .then(() => {
+    //Added some basic routes here
+    app.get("/", (req, res) => {
+      res.send("hell0");
+    });
     app.listen(process.env.PORT || 3000, () => {
       console.log(`🚀 Server is running on port : ${process.env.PORT}`);
     });
