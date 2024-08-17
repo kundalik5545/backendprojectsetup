@@ -1,5 +1,5 @@
 {
-  "name": "backensetup",
+  "name": "backendsetup",
   "version": "1.0.0",
   "description": "Full production level backend setup",
   "type": "module",

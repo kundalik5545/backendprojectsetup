@@ -239,3 +239,40 @@ npm list packagename
 ```cmd
 npm list mongoose
 ```
+
+#### Prettier file generator
+
+[.prettierrc file generator](https://michelelarson.com/prettier-config/)
+[Visually prettier file generator](https://prettier.io/playground/)
+
+```json
+{
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "tabWidth": 2,
+  "semi": true,
+  "trailingComma": "es5"
+}
+```
+
+In javascript, markdown, html, css, jsx files use default comment and then state prettier-ignore for keeping prettier away from formating. Such as-
+
+```comment
+//prettier-ignore
+```
+
+#### .prettierignore file
+
+```json
+*.env
+.env
+.env*
+
+/.vscode
+/node_modules
+./dist
+```
+
+#### .gitignore file generator
+
+[Visually .gitignore file generator](https://mrkandreev.name/snippets/gitignore-generator/)
