@@ -158,6 +158,21 @@ export { asyncHandler };
 
 ### 28. Handle API error under utils folder 📂
 
+### 29. Instal npm i mongoose-aggregate-paginate-v2 to handle aggregation pipeline
+
+This pkg gives us power to install plugin in our mongoose
+
+### 30. Install Bcrypt => to hash password
+
+1. Bcrypt => core bcrypt => we install this
+2. Bcrypt js
+
+### 31. Install JWT => Json web token
+
+### 32. Install JWT => Json web token
+
+### 33. Install JWT => Json web token
+
 ## Packages to install
 
 ## 1. node version check
@@ -227,6 +242,28 @@ npm i cors
 ```
 
 ### 12. Install cookie-parser
+
+```cmd
+npm i cookie-parser
+```
+
+### 13. Install mongoose aggregation
+
+```cmd
+npm i mongoose-aggregate-paginate-v2
+```
+
+### 14. Install Bcrypt
+
+```cmd
+npm i bcrypt
+```
+
+### 15. Install JWT
+
+```cmd
+npm i jsonwebtoken
+```
 
 ### To check all packages version
 
