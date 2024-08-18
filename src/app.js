@@ -23,4 +23,14 @@ app.use(express.static("public"));
 //This is configuration for url data
 app.use(cookieParser());
 
+//Now start routing here
+import userRouter from "./routes/User.routes.js";
+
+//Routes declaration
+// app.use("/users", userRouter);
+app.use("/api/v1/users", userRouter);
+
+// http://localhost:3000/users/register
+// Standard way => http://localhost:8000/api/v1/users/register
+
 export { app };

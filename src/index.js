@@ -10,9 +10,6 @@ dotenv.config({ path: "./env" });
 connectDB()
   .then(() => {
     //Added some basic routes here
-    app.get("/", (req, res) => {
-      res.send("hell0");
-    });
     app.listen(process.env.PORT || 3000, () => {
       console.log(`🚀 Server is running on port : ${process.env.PORT}`);
     });
