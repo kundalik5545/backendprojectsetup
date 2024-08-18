@@ -169,11 +169,20 @@ This pkg gives us power to install plugin in our mongoose
 
 ### 31. Install JWT => Json web token
 
-### 32. Install JWT => Json web token
+To create token use this
+[JWT token generator](https://emn178.github.io/online-tools/sha256.html)
 
-### 33. Install JWT => Json web token
+### 32. Use cloudinary for handling files
 
-## Packages to install
+### 33. Use fs
+
+1. unlink => to delete file from server
+
+## 34. Use multer to create middlewares
+
+[Multer documents](https://github.com/expressjs/multer)
+
+============================================================================
 
 ## 1. node version check
 
@@ -263,6 +272,18 @@ npm i bcrypt
 
 ```cmd
 npm i jsonwebtoken
+```
+
+### 16. Install cloudinary
+
+```cmd
+npm i cloudinar
+```
+
+### 17. Install multer
+
+```cmd
+npm i multer
 ```
 
 ### To check all packages version
